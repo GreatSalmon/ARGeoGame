@@ -1,0 +1,15 @@
+extends layout
+
+block content
+	h1.
+		User List
+	ul
+		each user, i in userlist
+			li
+				a(href="mailto:#{user.email}")= user.username
+				div(id=user.username) 
+					div(class="lat") lat: #{user.lat} , 
+					div(class="lon") lon: #{user.lon} 
+
+	script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
+	script(src="/javascripts/geo.js")
