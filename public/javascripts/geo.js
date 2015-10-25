@@ -19,18 +19,18 @@ function getLocation() {
     }
 }
 
-function showPosition(position) {
-    var username = params.userName;
+// function showPosition(position) {
+//     var username = params.userName;
 
-    var lat = $('#'+username).find('.lat')[0];
-    var lon = $('#'+username).find('.lon')[0];
+//     var lat = $('#'+username).find('.lat')[0];
+//     var lon = $('#'+username).find('.lon')[0];
 
-   // var lat = document.getElementById("lat");
-   // var lon = document.getElementById("lon");
+//    // var lat = document.getElementById("lat");
+//    // var lon = document.getElementById("lon");
 
-    lat.innerHTML = "Lat: " + position.coords.latitude; 
-    lon.innerHTML = "Lon: " + position.coords.longitude;
-}
+//     lat.innerHTML = "Lat: " + position.coords.latitude; 
+//     lon.innerHTML = "Lon: " + position.coords.longitude;
+// }
 
 function showPositions(data){
     
